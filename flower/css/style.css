@@ -1,0 +1,578 @@
+@charset "utf-8";
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #3f434a;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100%;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+/*ヘッダー*/
+
+header {
+    background-image: url("../images/bg_header_pink.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 95%;
+    min-height: 660px;
+    text-align: center;
+    position: relative;
+    padding-top: 48px;
+    color: #fff;
+}
+
+header .logo {
+    margin: 0 auto 16px;
+    width: 131px;
+    height: 116px;
+    background-image: url("../images/header_logo.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 15vh;
+}
+
+.tagline {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+header .content {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 260px;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    padding-top: 24px;
+}
+
+.download_app {
+    padding: 24px 16px;
+    height: 49px;
+}
+
+.download_app .container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.download_app .container a {
+    display: block;
+    margin: 0 auto;
+    width: 164px;
+}
+
+.download_app .container .badge_appstore {
+    width: 164px;
+    height: 49px;
+    margin: 0 auto;
+    background-image: url("../images/Badge_Appstore.png");
+    background-size: cover;
+    margin-right: 16px;
+}
+
+.download_app .badge_googleplaystore {
+    width: 164px;
+    height: 49px;
+    margin: 0 auto;
+    background-image: url("../images/Badge_Googleplaystore.png");
+    background-size: cover;
+}
+
+header .footnote {
+    margin: 24px auto;
+    font-size: small;
+}
+
+
+/*サービス*/
+
+.service .container {
+    display: flex;
+}
+
+.service .container .item {
+    padding: 8vmin 6vmin;
+    flex-grow: 1;
+    flex-basis: 1vw;
+    height: 65vh;
+}
+
+.service h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: #fff;
+    text-align: justify;
+}
+
+.service .container .item1 {
+    background-image: url("../images/bg_service01.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.service .container .item2 {
+    background-image: url("../images/bg_service02.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.service .container .item3 {
+    background-image: url("../images/bg_service03.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.price {
+    text-align: center;
+}
+
+.price .container .price {
+    background: #f5f5f5;
+    padding: 64px 24px;
+}
+
+.price .container .item {
+    flex-grow: 1;
+    flex-basis: 375px;
+}
+
+.price .container .price .wrap {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.price .container {
+    display: flex;
+}
+
+.price h2 {
+    font-size: 2rem;
+}
+
+.price .content {
+    display: flex;
+}
+
+.price .bouquet {
+    flex-basis: 200px;
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/price_bouquetimg.png");
+    background-size: cover;
+    position: relative;
+    margin: 24px auto
+}
+
+.price .freetrial {
+    height: 46px;
+    width: 125px;
+    position: absolute;
+    top: -24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/price_trial.png");
+    background-size: 200px 200px;
+    background-size: cover;
+    position: relative;
+}
+
+#bouquet_price {
+    margin: 16px auto;
+    flex: none;
+    font-weight: bold;
+}
+
+#bouquet_price p.large {
+    font-size: 2rem;
+}
+
+#bouquet_price p span {
+    font-size: 1.5rem;
+}
+
+.price .footnote p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.price .frequency {
+    margin: auto;
+    padding: 64px 24px;
+}
+
+.price .img_frequency {
+    margin-top: 24px;
+    height: 156px;
+    background-image: url("../images/img_frequency.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flower {
+    padding: 0 24px;
+    background: #ead5dc;
+    text-align: center;
+}
+
+.flower h2 {
+    font-size: 2.6rem
+}
+
+.flower .container {
+    flex-flow: column wrap;
+    display: flex;
+    height: 730px;
+}
+
+.flower .title {
+    order: 2;
+    width: 50%;
+    margin-top: 140px;
+    margin-bottom: 24px;
+}
+
+.flower .item {
+    flex-grow: 1;
+}
+
+.flower .img {
+    order: 1;
+    width: 50%;
+    background-image: url("../images/bg_flower.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 730px;
+}
+
+.flower .body {
+    order: 3;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.flower h3 {
+    margin-top: 24px;
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.flower p {
+    text-align: justify;
+}
+
+
+/*花器*/
+
+.base {
+    padding: 10vmin 0 0;
+    background: #e7e3df;
+    text-align: center;
+}
+
+.base .container {
+    height: 730px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.base h2 {
+    font-size: 2.6rem;
+}
+
+.base .item {
+    flex-grow: 1;
+}
+
+.base .title {
+    order: 1;
+    width: 50%;
+    padding: 0;
+}
+
+.base .discount {
+    background: #fff;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.base .img {
+    order: 3;
+    height: 730px;
+    width: 50%;
+    margin: 0 auto;
+    background-image: url("../images/bg_vase.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.base .body {
+    order: 2;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 0;
+}
+
+.base .body p {
+    text-align: justify;
+}
+
+.vase_variation {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px auto;
+}
+
+.vase_variation .item {
+    flex-grow: 1;
+    height: 116px;
+    max-width: 98px;
+    position: relative;
+}
+
+.vase_variation .item p {
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.bell {
+    background-image: url("../images/vase_bell.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moon {
+    background-image: url("../images/vase_moon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.candle {
+    background-image: url("../images/vase_candle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.base .price {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.base .price .title {
+    width: 100px;
+    order: 1;
+    border: 2px solid;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.base .price .content {
+    order: 2;
+    display: block;
+}
+
+.discount_price {
+    font-size: 1.8rem;
+}
+
+.normal_price {
+    font-size: 1.3rem;
+}
+
+.base .footnote {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+
+/*サービス2*/
+
+.service2 {
+    padding: 12vmin 4vmin 16vmin;
+    text-align: center;
+}
+
+.service2 h2 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.service2 .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service2 .item {
+    flex-grow: 1;
+    flex-basis: 223px;
+    padding-top: 80px;
+    margin-top: 24px;
+}
+
+.service2 .container .item1 {
+    width: 80px;
+    background-image: url("../images/icon01.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px;
+}
+
+.service2 .container .item2 {
+    width: 80px;
+    background-image: url("../images/icon02.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px;
+}
+
+.service2 .container .item3 {
+    width: 80px;
+    background-image: url("../images/icon03.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px;
+}
+
+
+/*ダウンロード画像*/
+
+.download {
+    background: #efdfc5;
+    height: 420px;
+    padding: 0 4vmin;
+    text-align: center;
+}
+
+.download .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.download .container .logo {
+    order: 2;
+    margin-left: -250px;
+    margin-top: 60px;
+    padding-top: 76px;
+    height: 145px;
+    background-image: url("../images/logo_vertical_navy.png");
+    background-repeat: no-repeat;
+    background-size: 118px;
+    background-position: center top;
+}
+
+.logo h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+.download .container .img {
+    order: 1;
+    margin: 0;
+    order: 1;
+    width: 80%;
+    height: 422px;
+    background-size: contain;
+    background-image: url("../images/bg_download2.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 8vmin 8vmin 32vmin;
+    background: #3f434a;
+    position: relative;
+    min-height: 164px;
+}
+
+footer .instagram {
+    width: 64px;
+    height: 64px;
+    background-image: url("../images/icon_instagram.png");
+    background-size: cover;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+footer .container .item {
+    flex-grow: 1;
+    margin-bottom: 16px;
+    flex-basis: auto;
+}
+
+footer .copyright {
+    text-align: center;
+    position: absolute;
+    bottom: 124px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+footer .copyright p {
+    color: #fff;
+    font-size: 1.3rem;
+    opacity: 0.4;
+}
